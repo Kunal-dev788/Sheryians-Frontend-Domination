@@ -13,5 +13,11 @@ In this Repository i will uploaded all the project source code that i have learn
 # CSS Minor Project
 https://github.com/user-attachments/assets/50efe7b8-cff5-4fb9-9947-579d6a2f5c4f
 
+# GSAP ScrollEffect
+https://github.com/user-attachments/assets/e3d517f6-35ce-4cba-98f5-12a0bb9d3629
+
+# GSAP Minor Project
+https://github.com/user-attachments/assets/abc979f0-0885-4cc0-be41-f39a605da59a
+
 # CSS Major Project
 https://github.com/user-attachments/assets/10634926-3419-4ec2-8052-0c36da22b59b
