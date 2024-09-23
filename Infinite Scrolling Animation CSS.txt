@@ -1,0 +1,41 @@
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: darkorange; */
+    /* padding: 1vw; */
+    display: flex;
+    flex-wrap: nowrap;
+    /* overflow-x: hidden; */
+    overflow: hidden;
+}
+
+.container{
+    height: 100%;
+    width: 135%;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 1%;
+    margin-right: 1%;
+    animation-name: anime;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroll img{
+    /* display: none; */
+    height: 80%;
+    width: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@keyframes anime {
+    from{
+        transform: translatex(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }

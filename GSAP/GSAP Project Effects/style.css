@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #E3E3C4;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #535D41;
+    padding: 3vw;
+}
+
+#page2 h1{
+    color: #434B34;
+    font-size: 4vw;
+    line-height: 4.6vw;
+    text-align: center;
+    font-weight: 400;
+    font-family: PP Woodland;
+}
+
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+}

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: coral; */
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(255, 156, 121); */
+}
+
+#img-div {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+#img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    scale: 1.4;
+}
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(255, 184, 158); */
+}

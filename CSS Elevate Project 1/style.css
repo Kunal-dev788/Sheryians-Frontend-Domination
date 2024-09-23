@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2%;
+}
+
+#nav ul {
+  display: flex;
+}
+
+#nav ul li {
+  list-style: none;
+  margin-right: 22px;
+}
+
+#nav ul li a {
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+#nav ul li a :nth-last-child(1) {
+  background-color: black;
+  padding: 0.5vw;
+  border-radius: 50%;
+  color: white;
+}
+
+#nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#hero-section {
+  height: 55vh;
+  width: 100%;
+}
+
+#hero-one {
+  height: 50%;
+  width: 100%;
+  padding-left: 6%;
+}
+
+#hero-one h1 {
+  font-size: 3.8vw;
+  font-weight: 500;
+}
+
+#hero-two {
+  height: 50%;
+  width: 100%;
+  padding: 0 2% 0 6%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#hero-two-left {
+  height: 100%;
+  width: 50%;
+}
+
+#hero-two-left h4 {
+  font-weight: 100;
+  line-height: 1.6;
+  font-size: 1vw;
+}
+
+#hero-two-left :nth-child(1) {
+  margin-top: 4vh;
+}
+
+#hero-two-right {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5vh;
+}
+
+#hero-two-right h2 {
+  margin: 0.5vw;
+  position: relative;
+}
+
+#hero-two-right h2 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  font-size: 1vw;
+}
+
+#hero-two-right h2 a:hover {
+  text-decoration: underline;
+}
+
+#hero-two-right h2 i {
+  font-weight: 100;
+  position: absolute;
+  right: 0;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Show the icon when hovering over the h2 element */
+#hero-two-right h2:hover i {
+  opacity: 1; /* Make it visible on hover */
+  color: #000000; /* Change color on hover */
+  transform: translateX(5px); /* Slightly move the icon */
+}
+
+#img-section {
+  height: 35vh;
+  width: 100%;
+}
+
+#img-section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (max-width:600px) {
+  
+  #nav {
+    height: 5vh;
+    padding-right: 1%;
+    /* background-color: red; */
+  }
+  
+  #nav ul li {
+    margin-right: 15px;
+  }
+  
+  #nav ul li a {
+    font-size: 3.5vw;
+    font-weight: 600;
+  }
+  
+  #nav ul li a :nth-last-child(1) {
+    padding:1.5vw;
+    font-size: 3.5vw;
+  }
+
+  #hero-section {
+    height: 60vh;
+    /* background-color: lightgreen; */
+  }
+  
+  #hero-one {
+    height: 50%;
+    padding-top: 3vh;
+    /* background-color: lightblue; */
+  }
+  
+  #hero-one h1 {
+    font-size: 11vw;
+    line-height: 13.5vw;
+  }
+  
+  #hero-two {
+    height: 50%;  
+    flex-direction: column;
+    /* background-color: lightpink; */
+  }
+  
+  #hero-two-left {
+    height: 60%;
+    width: 100%;
+    /* background-color: lightsalmon; */
+  }
+  
+  #hero-two-left h4 {
+    line-height: 5vw;
+    font-size: 3.3vw;
+  }
+  
+  #hero-two-left :nth-child(1) {
+    margin-top: 0vh;
+  }
+  
+  #hero-two-right {
+    width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    /* background-color: limegreen; */
+  }
+  
+  #hero-two-right h2 {
+    margin: .8vw;
+    position: relative;
+  }
+  
+  #hero-two-right h2 a {
+    font-weight: 100;
+    font-size: 3.3vw;
+  }
+
+  #img-section {
+    height: calc(100vh - 65vh);
+  }
+
+}

@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#section-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: beige; */
+    padding-top: 15vh;
+    padding-left: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#section-left h1{
+    font-size: 8vw;
+    font-weight: 600;
+}
+
+#left-bottom{
+    height: 50%;
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#color-box{
+    width: 8vw;
+    border: 2px solid #cab200;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px 6px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3.5vh;
+}
+
+#color-box h4{
+    font-size: 1vw;
+    font-weight: 600;
+    margin-right: .3vw;
+}
+
+#color-circle-one{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: magenta;
+}
+
+#color-circle-two{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+#left-bottom h3{
+    font-size: 2vw;
+    font-weight: 800;
+    margin-bottom: 1vh;
+}
+
+#left-bottom h5{
+    font-size: 1vw;
+    font-weight: 400;
+    width: 70%;
+    line-height: 1.5;
+}
+
+#section-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: bisque; */
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#price-box{
+    height: 5vh;
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10.5vh;
+}
+
+#price-box h6 i{
+    color: gold;
+}
+
+#section-right h2{
+    position: absolute;
+    bottom: 15%;
+    left: 7.5%;
+    rotate: -90deg;
+}
+
+#gola{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#gola h3{
+    color: #aeaeae;
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+#img-section{
+    height: 100%;
+    width: 50%;
+    /* background-color:#cab200 ; */
+    background-image: url(https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #section-left{
+        height: 50%;
+        width: 80%;
+        /* background-color:bisque; */
+        padding-top: 2vh;
+        padding-left: 0vw;
+    }
+    
+    #section-left h1{
+        font-size: 16vw;
+        line-height: 18vw;
+    }
+    
+    #left-bottom{
+        padding-top: 3.5vh;
+        height: 60%;
+        /* background-color: lightblue; */
+        justify-content: flex-start;
+    }
+    
+    #color-box{
+        width: 26vw;
+        padding: 6px 6px;
+        margin-bottom: 2.5vh;
+    }
+    
+    #color-box h4{
+        font-size: 3vw;
+        margin-right: 1vw;
+    }
+    
+    #color-circle-one{
+        height: 12px;
+        width: 12px;
+        background-color: red;
+    }
+    
+    #color-circle-two{
+        height: 12px;
+        width: 12px;
+        background-color: black;
+    }
+    
+    #left-bottom h3{
+        font-size: 5vw;
+    }
+    
+    #left-bottom h5{
+        font-size: 3vw;
+        width: 100%;
+        line-height: 4.5vw;
+    }
+
+    #section-right{
+        height: 50%;
+        width: 80%;
+        /* background-color: lightcoral; */
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+    #price-box{
+        width: 100%;
+        /* background-color: red; */
+        margin-top: 0vh;
+        margin-bottom: 1.4vh;
+    }
+
+    #price-box h3{
+        font-size: 4.5vw;
+    }
+    
+    #price-box h6 {
+        font-size: 2.5vw;
+    }
+
+    #section-right h2{
+        bottom: 0%;
+        top: 0;
+        left: 0%;
+        rotate: 0deg;
+    }
+    
+    #gola{
+        height: 20vw;
+        width: 20vw;
+        top: 0%;
+        right: -10%;
+    }
+    
+    #gola h3{   
+        font-size: 2.5vw;
+    }
+    
+    #img-section{
+        height: 76%;
+        width: 100%;
+        background-position: center;
+        border-radius: 5px;
+    }
+    
+}

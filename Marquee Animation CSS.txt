@@ -1,0 +1,35 @@
+  #marque{
+    width: 100%;
+    background-color: salmon;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+  }
+
+  #marque h1{
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 5vw;
+    font-size: 4vw;
+    font-family: 'gilroy';
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    animation-name: marque-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes marque-animation {
+
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 5vw));
+    }
+    
+  }
